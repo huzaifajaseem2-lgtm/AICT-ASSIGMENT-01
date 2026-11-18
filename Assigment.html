@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>NED University of Engineering & Technology</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f5f6f4;color:#333;}
+header{background:#006747;color:white;padding:18px 5%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+.logo h2{font-size:23px;}
+.logo p{font-size:11px;margin-top:5px;}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px;}
+nav a:hover{color:#ffd700;}
+.hero{background:linear-gradient(rgba(0,50,35,.75),rgba(0,50,35,.75)),url("https://images.unsplash.com/photo-1562774053-701939374585?w=1600");background-size:cover;background-position:center;color:white;text-align:center;padding:100px 15px;}
+.hero h1{font-size:38px;margin-bottom:15px;}
+.hero p{font-size:18px;margin-bottom:20px;}
+button{background:#d4af37;color:#222;border:none;padding:11px 22px;margin:5px;cursor:pointer;border-radius:3px;font-size:14px;}
+button:hover{background:#f1c40f;}
+section{padding:40px 6%;text-align:center;}
+section h2{color:#006747;margin-bottom:20px;font-size:27px;}
+.about{background:white;line-height:1.8;}
+.boxes{display:flex;justify-content:center;flex-wrap:wrap;gap:18px;}
+.card{background:white;width:250px;padding:22px;border-radius:5px;box-shadow:0 2px 8px #ccc;border-bottom:4px solid #006747;}
+.card h3{color:#006747;margin-bottom:12px;}
+.card p{line-height:1.6;margin-bottom:12px;font-size:14px;}
+.card a{color:#006747;text-decoration:none;font-weight:bold;}
+.news{background:#eaf1ed;}
+.events{background:white;}
+.students{background:#eaf1ed;}
+.contact{background:white;line-height:2;}
+footer{background:#004d36;color:white;padding:25px 6%;text-align:center;line-height:1.8;}
+footer a{color:#ffd700;text-decoration:none;}
+#loginBox{display:none;background:white;padding:20px;width:300px;margin:15px auto;box-shadow:0 2px 10px #aaa;border-radius:5px;text-align:center;}
+input{width:100%;padding:10px;margin:8px 0;border:1px solid #aaa;border-radius:4px;}
+@media(max-width:600px){header{justify-content:center;text-align:center;}nav{margin-top:12px;}nav a{display:inline-block;margin:5px;font-size:13px;}.hero h1{font-size:28px;}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<h2>NED UNIVERSITY</h2>
+<p>OF ENGINEERING & TECHNOLOGY, KARACHI</p>
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#academics">Academics</a>
+<a href="#admissions">Admissions</a>
+<a href="#students">Students</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<div class="hero" id="home">
+<h1>Welcome to NED University</h1>
+<p>100+ Years of Academic Excellence</p>
+<button onclick="goSection('about')">Explore University</button>
+<button onclick="goSection('admissions')">Admissions</button>
+</div>
+<section class="about" id="about">
+<h2>About NED University</h2>
+<p>NED University of Engineering & Technology is one of the oldest engineering institutions in Pakistan. It was established in 1921 as an engineering college and upgraded to university status in 1977. The university provides quality education in engineering, science and technology.</p>
+<br>
+<button onclick="alert('Visit the official NED website for more information.')">Read More</button>
+</section>
+<section id="academics">
+<h2>Academics</h2>
+<div class="boxes">
+<div class="card">
+<h3>Faculties</h3>
+<p>Explore different faculties and academic departments of NED University.</p>
+<a href="https://www.neduet.edu.pk/">Read More</a>
+</div>
+<div class="card">
+<h3>Departments</h3>
+<p>Learn about engineering, science and technology departments.</p>
+<a href="https://www.neduet.edu.pk/">Read More</a>
+</div>
+<div class="card">
+<h3>Research Centers</h3>
+<p>Discover research and innovation facilities at NED University.</p>
+<a href="https://www.neduet.edu.pk/">Read More</a>
+</div>
+</div>
+</section>
+<section class="news">
+<h2>Latest News</h2>
+<div class="boxes">
+<div class="card">
+<h3>University News</h3>
+<p>Get the latest announcements and updates from NED University.</p>
+<a href="https://www.neduet.edu.pk/">View News</a>
+</div>
+<div class="card">
+<h3>University Events</h3>
+<p>Find information about university events, seminars and conferences.</p>
+<a href="https://www.neduet.edu.pk/">View Events</a>
+</div>
+<div class="card">
+<h3>Research Activities</h3>
+<p>Explore research activities and achievements of the university.</p>
+<a href="https://www.neduet.edu.pk/">Explore</a>
+</div>
+</div>
+</section>
+<section id="admissions">
+<h2>Admissions</h2>
+<div class="boxes">
+<div class="card">
+<h3>Undergraduate Admissions</h3>
+<p>Get information about undergraduate admission programmes.</p>
+<a href="https://www.neduet.edu.pk/admission/">Apply / Details</a>
+</div>
+<div class="card">
+<h3>Postgraduate Admissions</h3>
+<p>Explore postgraduate degree programmes and admission details.</p>
+<a href="https://www.neduet.edu.pk/admission/">Read More</a>
+</div>
+<div class="card">
+<h3>Admission Information</h3>
+<p>Check admission announcements, schedules and guidelines.</p>
+<a href="https://www.neduet.edu.pk/admission/">Learn More</a>
+</div>
+</div>
+</section>
+<section class="students" id="students">
+<h2>Student Facilities</h2>
+<div class="boxes">
+<div class="card">
+<h3>Library</h3>
+<p>Access educational resources and library facilities.</p>
+</div>
+<div class="card">
+<h3>Scholarships</h3>
+<p>Find information about student scholarships and opportunities.</p>
+</div>
+<div class="card">
+<h3>Examinations</h3>
+<p>Get examination schedules, results and other information.</p>
+</div>
+</div>
+</section>
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p><b>NED University of Engineering & Technology</b></p>
+<p>University Road, Karachi-75270, Pakistan</p>
+<p>Phone: +92-21-99261261-8</p>
+<p>Email: registrar@neduet.edu.pk</p>
+<button onclick="contactMessage()">Contact Now</button>
+</section>
+<footer>
+<h3>NED University of Engineering & Technology</h3>
+<p>University Road, Karachi, Pakistan</p>
+<p>© 2026 NED University | Student Practice Project</p>
+<p><a href="https://www.neduet.edu.pk/" target="_blank">Official University Website</a></p>
+</footer>
+<script>
+function goSection(id){
+document.getElementById(id).scrollIntoView({behavior:"smooth"});
+}
+function contactMessage(){
+alert("Thank you for visiting NED University website!");
+}
+</script>
+</body>
+</html>
